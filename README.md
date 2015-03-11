@@ -1,3 +1,4 @@
+*Please note: this is only the markdown version of my resume created as an overview. Please download the .pdf because it is my actual resume (they are not the same).*
 
 # Rushi Shah
 | 2016rshah@gmail.com | 202-765-7424 | [https://github.com/2016rshah](https://github.com/2016rshah) | 

@@ -67,3 +67,7 @@ Temporary Items
 *.mtc1
 *.out
 *.synctex.gz
+
+
+#Cover letter directory
+cover_letters/

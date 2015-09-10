@@ -1,0 +1,124 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,letterpaper,roman]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Rushi} % Your first name
+\familyname{Shah} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+% \title{Curriculum Vitae}
+\address{7609 Leonard Drive}{Falls Church, VA 22043}
+% \mobile{(000) 111 1111}
+% \phone{(000) 111 1112}
+% \fax{(000) 111 1113}
+\email{2016rshah@gmail.com}
+\homepage{www.rshah.io}{Site: rshah.io/} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\github{2016rshah}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\section{Education}
+
+\cventry{Graduating Class of 2016}{Thomas Jefferson High School for Science and Technology}{}{}{}{Thomas Jefferson (TJ) is a highly selective, gold medal high school nationally renowned for its rigorous academic curriculum focused on Science, Technology, Engineering, and Math (STEM). The school boasts 13 specialized research labs, ranging from astrophysics to microelectronics to oceanography. It has been ranked as the number one high school according to Newsweek for two years in a row and is consistently ranked as one of the Top 5 High Schools in the United States by US News and World Report.}  % Arguments not required can be left empty
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\subsection{The MITRE Corporation}
+
+\cventry{2014-2015}{Computer Science Intern}{Federal Aviation Administration Department}{}{Python}{
+	\begin{description}
+	  \item[Summer 2014] \hfill \\
+	  The first year I created and analyzed the performance of various call-sign identification algorithms and conducted natural language processing research on over 12,000 air traffic controller transmissions into the use of prefixes before call signs by air traffic controllers.
+	  \item[Summer 2015] \hfill \\
+	  The second year I expanded my NLP work to over 25,000 transmissions and analyzed the use of separators between runway identifiers and clearances. I culminated my research by expanding the strict language model used for the Closed Runway Operations Prevention Device (CROPD) to boost the accuracy of the speech recognition engine.
+	\end{description}
+}
+
+\hfill
+
+\subsection{Nclud}
+\cventry{2015}{Computer Science Intern}{}{}{\newline{}Javascript (client and server-side)}{
+	\begin{description}
+	  \item[Spring 2015] \hfill \\
+	  I was a web-development and web-design intern at nclud (a DC-based Web Design Firm). While there I assisted on various projects such as the nclud rebrand, the GreenMachine site, and the extremely important Meteor-Twitter pun app. Most of my work was in JavaScript including the Meteor framework and ThreeJS animations.
+	\end{description}
+}
+
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Computer skills}
+
+\cvitem{Fluent}{\textsc{java}, \textsc{python}, \textsc{javascript}}
+\cvitem{Learning}{\textsc{haskell}, \textsc{ruby (on rails)}, \LaTeX}
+
+% %----------------------------------------------------------------------------------------
+% %	COVER LETTER
+% %----------------------------------------------------------------------------------------
+
+% % To remove the cover letter, comment out this entire block
+
+% \clearpage
+
+% \recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+% \date{\today} % Letter date
+% \opening{Dear Sir or Madam,} % Opening greeting
+% \closing{Sincerely yours,} % Closing phrase
+% \enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+% \makelettertitle % Print letter title
+
+% \lipsum[1-3] % Dummy text
+
+% \makeletterclosing % Print letter signature
+
+% %----------------------------------------------------------------------------------------
+
+\end{document}

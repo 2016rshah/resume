@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1456184027 "Rushi_Shah_Resume.tex" "Rushi_Shah_Resume.pdf" "Rushi_Shah_Resume" 1456184119
-  "./Rushi_Shah_Resume.out" 1456184028 471 ad5a7469e369032b20ea46b3e28069b8 ""
+["pdflatex"] 1456186231 "Rushi_Shah_Resume.tex" "Rushi_Shah_Resume.pdf" "Rushi_Shah_Resume" 1456186232
+  "./Rushi_Shah_Resume.out" 1456186232 524 324c3ded886a53c4b8210f0aa7d2bcba ""
   "/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc" 1202520719 2840 216e6e45ad352e2456e1149f28885bee ""
   "/usr/local/texlive/2015/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
@@ -12,7 +12,6 @@
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/lm/ec-lmr10.tfm" 1254269338 12056 7e13df7fe4cbce21b072ba7c4f4deb6e ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/lm/ec-lmr12.tfm" 1254269338 12092 7b1546e2d096cfd5dcbd4049b0b1ec2e ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/lm/ec-lmr17.tfm" 1254269338 12156 ca1ae6a3c8564e89597f1f993fba1608 ""
-  "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/lm/ec-lmr8.tfm" 1254269338 12064 a35db870f0b76c338d749c56dc030ef5 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/lm/ec-lmro10.tfm" 1254269338 12196 3ef208c5996a6e35328a273ab73fa1e1 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/lm/ec-lmtt10.tfm" 1254269338 1372 2ef2c2b492b3c4cd7879fe083abbb061 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/lm/lmex10.tfm" 1148093231 992 ce925c9346c7613270a79afbee98c070 ""
@@ -31,7 +30,6 @@
   "/usr/local/texlive/2015/texmf-dist/fonts/type1/public/lm/lmr10.pfb" 1255129361 119235 f35b44530a1d90eb90fe15d9cba67ea0 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/type1/public/lm/lmr12.pfb" 1255129361 113634 f99c44d58bae0863375faf0e1d74d612 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/type1/public/lm/lmr17.pfb" 1255129361 119752 1bd8d06e4079df624bf59ce3ad7c9aa6 ""
-  "/usr/local/texlive/2015/texmf-dist/fonts/type1/public/lm/lmr8.pfb" 1255129361 122174 a7a08406857c9530a0320a2517f60370 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/type1/public/lm/lmro10.pfb" 1255129361 131205 e6b9f0f008cce138627a5f401db34a3b ""
   "/usr/local/texlive/2015/texmf-dist/fonts/type1/public/lm/lmsy10.pfb" 1254269338 27863 09ce3735688ffde955e72da27c95b61a ""
   "/usr/local/texlive/2015/texmf-dist/fonts/type1/public/lm/lmtt10.pfb" 1255129361 113227 1010e11451afc2822c95dae77c390042 ""
@@ -98,9 +96,9 @@
   "/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1432479641 1764542 91654ba72bdb667e84ea24f076ae16d8 ""
   "/usr/local/texlive/2015/texmf-var/web2c/pdftex/pdflatex.fmt" 1432479681 3849859 39a7d258195bde2394e244961601fbc5 ""
   "/usr/local/texlive/2015/texmf.cnf" 1432479636 577 0d611272082f3cdb8e80e09a3c69cf07 ""
-  "Rushi_Shah_Resume.aux" 1456184028 959 b642c559d9664a65f8c3eb15e1ad1cc0 ""
-  "Rushi_Shah_Resume.out" 1456184028 471 ad5a7469e369032b20ea46b3e28069b8 ""
-  "Rushi_Shah_Resume.tex" 1456184027 6194 70634593aadec64a715d6acd9fd3c865 ""
+  "Rushi_Shah_Resume.aux" 1456186232 969 8cbe3f3f97ed4532d91842a31dbcec2d ""
+  "Rushi_Shah_Resume.out" 1456186232 524 324c3ded886a53c4b8210f0aa7d2bcba ""
+  "Rushi_Shah_Resume.tex" 1456186231 6247 1c5036a2163e1356824ad02ff1410d24 ""
   "moderncv.cls" 1441922733 17293 7c6e3ffbcc7ae8686f9958b577d5daa9 ""
   "moderncvcolorblue.sty" 1351684264 1009 c5b5914d8c68820b8c456499df00f008 ""
   "moderncvcompatibility.sty" 1351684264 3398 356ff0626d1912510390575078c99133 ""
@@ -108,7 +106,7 @@
   "moderncvstyleclassic.sty" 1354989288 13048 4235a916006e8e1c75070276eb61ef72 ""
   "tweaklist.sty" 1351684264 1966 8ce3a021c0bc6369db88faeddf828d71 ""
   (generated)
-  "Rushi_Shah_Resume.log"
-  "Rushi_Shah_Resume.out"
   "Rushi_Shah_Resume.aux"
+  "Rushi_Shah_Resume.log"
   "Rushi_Shah_Resume.pdf"
+  "Rushi_Shah_Resume.out"

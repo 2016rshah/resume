@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1473880601 "Rushi_Shah_Resume.tex" "Rushi_Shah_Resume.pdf" "Rushi_Shah_Resume" 1473880602
-  "./Rushi_Shah_Resume.out" 1473880602 579 80a757b1f82dd9b80d6f4ae43c7d38bd ""
+["pdflatex"] 1473882183 "Rushi_Shah_Resume.tex" "Rushi_Shah_Resume.pdf" "Rushi_Shah_Resume" 1473882183
+  "./Rushi_Shah_Resume.out" 1473882183 579 80a757b1f82dd9b80d6f4ae43c7d38bd ""
   "/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc" 1202520719 2840 216e6e45ad352e2456e1149f28885bee ""
   "/usr/local/texlive/2015/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
@@ -97,9 +97,9 @@
   "/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1432479641 1764542 91654ba72bdb667e84ea24f076ae16d8 ""
   "/usr/local/texlive/2015/texmf-var/web2c/pdftex/pdflatex.fmt" 1432479681 3849859 39a7d258195bde2394e244961601fbc5 ""
   "/usr/local/texlive/2015/texmf.cnf" 1432479636 577 0d611272082f3cdb8e80e09a3c69cf07 ""
-  "Rushi_Shah_Resume.aux" 1473880602 1031 61d40dec3c5c3a8ded82820d00a04768 ""
-  "Rushi_Shah_Resume.out" 1473880602 579 80a757b1f82dd9b80d6f4ae43c7d38bd ""
-  "Rushi_Shah_Resume.tex" 1473880601 7249 2d087508748fad79c37008e38597c744 ""
+  "Rushi_Shah_Resume.aux" 1473882183 1031 61d40dec3c5c3a8ded82820d00a04768 ""
+  "Rushi_Shah_Resume.out" 1473882183 579 80a757b1f82dd9b80d6f4ae43c7d38bd ""
+  "Rushi_Shah_Resume.tex" 1473882183 7499 33650d6a70ea46d3013e2de33af4880b ""
   "moderncv.cls" 1441922733 17293 7c6e3ffbcc7ae8686f9958b577d5daa9 ""
   "moderncvcolorblue.sty" 1473825009 1088 5167a02e915d9fd40b8486665f8b54db ""
   "moderncvcompatibility.sty" 1351684264 3398 356ff0626d1912510390575078c99133 ""
@@ -108,6 +108,6 @@
   "tweaklist.sty" 1351684264 1966 8ce3a021c0bc6369db88faeddf828d71 ""
   (generated)
   "Rushi_Shah_Resume.aux"
-  "Rushi_Shah_Resume.pdf"
   "Rushi_Shah_Resume.log"
+  "Rushi_Shah_Resume.pdf"
   "Rushi_Shah_Resume.out"

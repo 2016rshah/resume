@@ -34,6 +34,10 @@
 %\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
 % \setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
 
+\usepackage{framed}
+\definecolor{shadecolor}{rgb}{0.85,0.85,0.85}
+
+
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION SECTION
 %----------------------------------------------------------------------------------------
@@ -101,13 +105,40 @@
 %	COMPUTER SKILLS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Language Familiarity}
 
-\cvitem{4 years}{\textsc{java}}
-\cvitem{3 years}{\textsc{python}, \textsc{javascript}}
-\cvitem{2 years}{\textsc{ruby}}
-\cvitem{1 year}{\textsc{haskell}}
-\cvitem{< 1 year}{\textsc{elixir}}
+\begin{minipage}[t]{0.45\textwidth}
+	\section{Language Familiarity}
+		\cvitem{4 years}{\textsc{java}}
+		\cvitem{3 years}{\textsc{python}, \textsc{javascript}}
+		\cvitem{2 years}{\textsc{ruby}}
+		\cvitem{1 year}{\textsc{haskell}}
+		\cvitem{< 1 year}{\textsc{elixir}}
+\end{minipage}
+\begin{minipage}[t]{0.55\textwidth}
+	\section{Relevant Coursework}
+		\cvitem{{\color{color1}TJHSST}}{
+			Data Structures \newline
+			Artificial Intelligence I and II
+		}
+		% \cvitem{}{Mobile Application Development}
+		% \cvitem{}{Web Application Development}
+		\cvitem{{\color{color1}UT Austin}}{
+			M 427L: Applications of Vector Calculus \newline
+			CS 314H: Honors Data Structures \newline
+			CS 311H: Honors Discrete Math
+		}
+		\cvitem{{\color{color1}Online}}{
+			CIS 194: Introduction to Haskell
+		}
+
+
+
+		% \cventry{TJHSST}{}{}{Foundations of Computer Science, Data Structures, Artificial Intelligence I and II}
+		% \cventry{UT Austin}{Data Structures - Honors \\ Discrete Math - Honors}
+		% \cventry{UPenn (online)}{CIS194: Introduction to Haskell}
+\end{minipage}
+
+
 
 % %----------------------------------------------------------------------------------------
 % %	COVER LETTER

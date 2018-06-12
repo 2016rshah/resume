@@ -30,8 +30,9 @@
 
 \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
 
-\usepackage[scale=.83]{geometry} % Reduce document margins
-%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+\usepackage[scale=.80]{geometry} % Reduce document margins
+\setlength{\hintscolumnwidth}{2.45cm} % Uncomment to change the width of the dates column
+
 % \setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
 
 \usepackage{framed}
@@ -62,9 +63,9 @@
 %----------------------------------------------------------------------------------------
 \section{Education}
 
-\cventry{Class of 2020}{University of Texas - Austin}{Turing Scholar Honors Program}{}{}{{Double Majoring in Computer Science and Mathematics.} \\ \color{color2}{\ Ranked among US News and World Report's Top 10 Computer Science Programs.}}
+\cventry{Class of 2020}{University of Texas - Austin}{Turing Scholar Honors Program}{}{}{{Double Majoring in Computer Science and Mathematics. \textbf{GPA: 3.778}}}
 %Ranked among US News and World Report's Top 10 Computer Science Programs.
-\cventry{Class of 2016}{Thomas Jefferson High School for Science and Technology (TJHSST)}{}{}{}{\ \color{color2}{Ranked among US News And World Report's Top 5 Public High Schools.}} 
+\cventry{Class of 2016}{Thomas Jefferson High School for Science and Technology (TJHSST)}{}{}{}{} 
 %Ranked among US News And World Report's Top 5 Public High Schools.
  % Arguments not required can be left empty
 %----------------------------------------------------------------------------------------
@@ -73,56 +74,59 @@
 
 \section{Work Experience}
 
-\cventry{{\color{color1}Originate}}{Computer Science Intern}{}{}{{\color{color1}Scala, Haskell}}{
-	\begin{description}
-		\item[Summer 2017] - New York City \hfill \\
-		- Distributed computing for data center workload analysis (Scala + Spark + Cassandra) \\
-		- Blockchain cryptocurrency trading bot (Haskell) \\
-		\hspace*{.5cm} - Open source at \url{https://github.com/2016rshah/beginners-luck}
-	\end{description}
+\cventry{\small{Tokyo, Japan}}{\large{Amazon}}{}{Summer 2018}{}{
+	Service to track real-time, location-based purchase trends to tailor recommendations for customers
 }
 
 \hfill 
 
-\cventry{{\color{color1}The MITRE Corporation}}{Research Intern}{Federal Aviation Administration Department}{}{{\color{color1}Python}}{
+\cventry{\small{New York City}}{\large{Originate}}{}{Summer 2017}{}{
+	Distributed computing for data center workload analysis (Scala + Spark + Cassandra)
+}
+
+\hfill 
+
+
+\cventry{\small{Washington DC}}{\large{Nclud}}{}{Spring 2015}{}{
+	Full-stack web development (MeteorJS)
+}
+
+\hfill
+
+\cventry{\small{N. Virginia}}{\large{The MITRE Corporation}}{Federal Aviation Administration Department}{}{}{
 	\begin{description}
-	  \item[Summer 2014] - Northern Virgnia \hfill \\
+	  \item[\small{Summer 2014:}] \hfill \\
 	  	%The first year I created and analyzed the performance of various call-sign identification algorithms and conducted natural language processing research on over 12,000 air traffic controller transmissions into the use of 
 	  	% prefixes before call signs by air traffic controllers.
 	  	- Computational linguistics algorithms for call-sign identification \newline
 	  	- Natural language processing research \\
 	  	\hspace*{.5cm} - Analyzed emerging patterns in 12,000 air traffic controller transmissions
-	  \item[Summer 2015] - Northern Virginia \hfill \\
+	  \item[\small{Summer 2015:}] \hfill \\
 	  	- Expanded NLP work to over 25,000 transmissions and new emerging patterns\newline
 	  	% - Analyzed the use of separators between runway identifiers and clearances\newline
 	  	- Edited language model used for the Closed Runway Operations Prevention Device (CROPD)
 	\end{description}
 }
 
-\hfill
-
-\cventry{{\color{color1}Nclud}}{Web-Development Intern}{}{}{{\color{color1}Javascript (MeteorJS)}}{
-	\begin{description}
-	  \item[Spring 2015] - Washington
-	  % - Worked on Nclud's new re-branded website\newline
-	  % - Worked on website for George Mason University's marching band (the GreenMachine)\newline
-	  % - Pair programming in JavaScript including the Meteor framework and ThreeJS animations.
-	\end{description}
-}
-
 \section{Other Experience}
 
-\cventry{{\color{color1}UToPiA}}{UT Program Analysis Research Group}{Researcher}{advised by Prof. Isil Dillig}{}{}
+\cventry{``UToPiA''}{UT Program Analysis Research Group}{Researcher}{advised by Prof. Isil Dillig}{}{
+	Applying program synthesis techniques to database-driven web applications. 
+}
 
-\cventry{{\color{color1}ISSS}}{UT Information Systems \& Security Society}{Officer}{}{}{}
+\cventry{``ISSS''}{UT Information Systems \& Security Society}{Officer}{}{}{}
 
-\section{Projects}
+\cventry{TX Votes}{TX Votes (non-partisan civic engagement)}{STEM Committee Chairperson}{}{}{
+	Organized voter registration drive in CS building (one student registered every three minutes). 
+}
 
-\cventry{\large{NodeJS}}{Pynt}{}{draw data structures as shapes to get the corresponding Python code}{\newline{} \url{https://github.com/Pynt/Pynt}}{}
+\section{Open Source Projects}
 
-\cventry{\large{Ruby}}{Github Chart API}{}{embed github contributions calendar into HTML as an image \hfill }{\url{https://github.com/2016rshah/githubchart-api}}{}
+\cventry{NodeJS}{Pynt}{}{draw data structures as shapes to get the corresponding Python code}{\newline{} \url{https://github.com/Pynt/Pynt}}{}
 
-\cventry{\large{Haskell}}{Beginners Luck}{}{blockchain cryptocurrency trading bot with technical analysis}{\newline{} \url{https://github.com/2016rshah/beginners-luck}}{}
+\cventry{Haskell}{Heckle}{}{static-site compiler; supports LaTeX/PDF and Markdown/HTML posts}{\newline{} \url{https://github.com/2016rshah/heckle}}{}
+
+% \cventry{Ruby}{Github Chart API}{}{embed github contributions calendar into HTML as an image \hfill }{\url{https://github.com/2016rshah/githubchart-api}}{}
 
 
 %----------------------------------------------------------------------------------------
@@ -130,36 +134,42 @@
 %----------------------------------------------------------------------------------------
 
 
-\begin{minipage}[t]{0.45\textwidth}
-	\section{Language Familiarity}
-		\cvitem{5 years}{\textsc{java}}
-		\cvitem{4 years}{\textsc{python}, \textsc{javascript}}
-		\cvitem{3 years}{\textsc{ruby}}
-		\cvitem{2 years}{\textsc{haskell}}
-		\cvitem{$\sim 1$ year}{\textsc{scala}, \textsc{c}}
-\end{minipage}
-\begin{minipage}[t]{0.55\textwidth}
-	\section{Relevant Coursework}
-		\cvitem{{\color{color1}TJHSST}}{
-			Artificial Intelligence I and II
+% \begin{minipage}[t]{0.45\textwidth}
+% 	\section{Language Familiarity}
+% 		\cvitem{5 years}{\textsc{java}}
+% 		\cvitem{4 years}{\textsc{python}, \textsc{javascript}}
+% 		\cvitem{3 years}{\textsc{ruby}}
+% 		\cvitem{2 years}{\textsc{haskell}}
+% 		\cvitem{$\sim 1$ year}{\textsc{scala}, \textsc{c}}
+% \end{minipage}
+% \begin{minipage}[t]{0.55\textwidth}
+	
+	\begin{minipage}[t]{0.45\textwidth}
+		\section{Selected Coursework}
+
+		\cventry{UT Austin}{Computer Science}{}{}{}{
+			\textit{CS 439(H)}: Operating Systems (Honors) \\
+			\textit{CS 331(H)}: Algorithms and Complexity (Honors) \\
+			\textit{CS 395\ T}: \ Program Verification (Graduate) \\
+			\textit{CS\ 389\ L}: \ Automated Logical Reasoning (Graduate)
 		}
-		% \cvitem{}{Mobile Application Development}
-		% \cvitem{}{Web Application Development}
-		\cvitem{{\color{color1}UT Austin}}{
-			M\ \ 373K: Abstract Algebra I \newline
-			CS 439H: Operating Systems (Honors) \newline
-			CS 395T: Program Verification (Graduate)
+	\end{minipage}
+	\begin{minipage}[t]{0.55\textwidth}
+		\subsection{}
+		\cventry{}{Math}{}{}{}{
+			\textit{M\ \ 341(H)}: Theoretical Linear Algebra (Honors) \\
+			\textit{CS\ 311(H)}: Discrete Math (Honors) \\
+			\textit{M\ \ 373\ K}: \ Abstract Algebra I
 		}
-		\cvitem{{\color{color1}Online}}{
-			CIS 194: Introduction to Haskell
-		}
+	\end{minipage}
+
+	% \section{Language Familiarity}
+	% 	\cventry{}{\textsc{java}, \textsc{python}, \textsc{javascript}, \textsc{ruby}, \textsc{haskell}, \textsc{scala}, \textsc{c}, \textsc{c++}}{}{}{}{}
+		
+		% \cventry{}{Computer Science}{}{}{}{\textit{CS 439(H)}: Operating Systems (Honors), \textit{CS 331(H)}: Algorithms and Complexity (Honors), \newline{} \textit{CS 395T}: Program Verification (Graduate), \textit{CS\ 389L}: Automated Logical Reasoning (Graduate)}
 
 
-
-		% \cventry{TJHSST}{}{}{Foundations of Computer Science, Data Structures, Artificial Intelligence I and II}
-		% \cventry{UT Austin}{Data Structures - Honors \\ Discrete Math - Honors}
-		% \cventry{UPenn (online)}{CIS194: Introduction to Haskell}
-\end{minipage}
+% 
 
 
 

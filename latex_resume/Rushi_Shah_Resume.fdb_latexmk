@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1536952622 "Rushi_Shah_Resume.tex" "Rushi_Shah_Resume.pdf" "Rushi_Shah_Resume" 1536952622
-  "./Rushi_Shah_Resume.out" 1536952622 670 bbd982c265d98ce074b893ae954ea1e4 ""
+["pdflatex"] 1548991378 "Rushi_Shah_Resume.tex" "Rushi_Shah_Resume.pdf" "Rushi_Shah_Resume" 1548991379
+  "./Rushi_Shah_Resume.out" 1548991378 670 bbd982c265d98ce074b893ae954ea1e4 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc" 1202520719 2840 216e6e45ad352e2456e1149f28885bee ""
   "/usr/local/texlive/2015/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
@@ -99,9 +99,9 @@
   "/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1432479641 1764542 91654ba72bdb667e84ea24f076ae16d8 ""
   "/usr/local/texlive/2015/texmf-var/web2c/pdftex/pdflatex.fmt" 1432479681 3849859 39a7d258195bde2394e244961601fbc5 ""
   "/usr/local/texlive/2015/texmf.cnf" 1432479636 577 0d611272082f3cdb8e80e09a3c69cf07 ""
-  "Rushi_Shah_Resume.aux" 1536952622 1101 786a220ce9e3530eb5fb2863e5d504a6 ""
-  "Rushi_Shah_Resume.out" 1536952622 670 bbd982c265d98ce074b893ae954ea1e4 ""
-  "Rushi_Shah_Resume.tex" 1536952622 8188 83f96710d9ea05087e6401ef9da51f3b ""
+  "Rushi_Shah_Resume.aux" 1548991378 1101 786a220ce9e3530eb5fb2863e5d504a6 ""
+  "Rushi_Shah_Resume.out" 1548991378 670 bbd982c265d98ce074b893ae954ea1e4 ""
+  "Rushi_Shah_Resume.tex" 1548991378 8334 f555c4f58849d37e174ef7afeaa04084 ""
   "moderncv.cls" 1528818792 17293 7c6e3ffbcc7ae8686f9958b577d5daa9 ""
   "moderncvcolorblue.sty" 1473825009 1088 5167a02e915d9fd40b8486665f8b54db ""
   "moderncvcompatibility.sty" 1351684264 3398 356ff0626d1912510390575078c99133 ""
@@ -109,7 +109,7 @@
   "moderncvstyleclassic.sty" 1354989288 13048 4235a916006e8e1c75070276eb61ef72 ""
   "tweaklist.sty" 1351684264 1966 8ce3a021c0bc6369db88faeddf828d71 ""
   (generated)
-  "Rushi_Shah_Resume.log"
   "Rushi_Shah_Resume.out"
-  "Rushi_Shah_Resume.pdf"
   "Rushi_Shah_Resume.aux"
+  "Rushi_Shah_Resume.pdf"
+  "Rushi_Shah_Resume.log"

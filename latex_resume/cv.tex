@@ -1,0 +1,312 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,letterpaper,roman]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=.80]{geometry} % Reduce document margins
+\setlength{\hintscolumnwidth}{1.7cm} % Uncomment to change the width of the dates column
+
+% \setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+\usepackage{framed}
+\definecolor{shadecolor}{rgb}{0.85,0.85,0.85}
+
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Rushi} % Your first name
+\familyname{Shah} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+% \title{Curriculum Vitae}
+% \address{7609 Leonard Drive}{Falls Church, VA 22043}
+\email{2016rshah@gmail.com}
+\homepage{http://www.rshah.org}{Site: rshah.org/} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\github{2016rshah}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\section{Education}
+
+\cventry{May 2020}{University of Texas - Austin}{Turing Scholar Honors Program}{}{}{{B.S. Computer Science \& B.S. Mathematics. \textbf{GPA: 3.8}}}
+%Ranked among US News and World Report's Top 10 Computer Science Programs.
+\cventry{May 2016}{Thomas Jefferson High School for Science and Technology (TJHSST)}{}{}{}{} 
+%Ranked among US News And World Report's Top 5 Public High Schools.
+ % Arguments not required can be left empty
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+\cventry{2019}{UT Program Analysis Research Group (UToPiA)}{Research Assistant}{Austin}{}{
+	\begin{description}
+		\item[-] Created and submitted video abstract for {\em``Synthesizing Database Programs for Schema Refactoring''} (third author) to Programming Languages Design and Implementation conference
+		\item[-] Completed implementation and submitted follow-up paper called {\em ``Data Migration using Datalog Program Synthesis''} (second author) to a top-tier 2020 conference
+		\item[-] Research interest in program synthesis for database-driven web applications; implementations completed in Java programming language with Z3 SMT solver and Souffle Datalog engine
+	\end{description}
+}
+
+\hfill 
+
+\cventry{2018}{Amazon}{Software Engineering Intern}{Tokyo, Japan}{}{
+	\begin{description}
+		\item[-] Elegantly reduced the task of tracking real-time, location-based purchase trends in order data to the traditional machine vision problem of edge-detection
+		\item[-] Implemented said approach using the Java programming language, the Python programming language, the OpenCV library, and Amazon Web Services tools like S3 and EC2
+	\end{description}
+	% Machine vision algorithms to track real-time, location-based purchase trends in order data
+}
+
+\hfill 
+
+\cventry{2017}{Originate}{Software Engineering Intern}{New York City}{}{
+	\begin{description}
+		\item[-] Generalized and patched distributed computing scripts for data center workload analysis (primarily coded in the Scala programming language with the Spark framework over Cassandra databases)
+		\item[-] Implemented trading strategy simulation for crypto-currencies in the Haskell programming language
+	\end{description}
+	% Distributed computing for data center workload analysis (Scala + Spark + Cassandra)
+}
+
+% \hfill 
+
+% \cventry{2015}{Nclud}{Software Engineering Intern}{Washington DC}{}{Full-stack web development in MeteorJS} % 
+
+\hfill
+
+\cventry{2014-2015}{MITRE Corporation}{Research Assistant}{Washington DC}{}{
+	\begin{description}
+		\item[-] Adapted computational linguistics algorithms to call-sign identification task in over 25,000 air traffic controller transmissions using the Python programming language
+		\item[-] Edited strict language model used for Closed Runway Operations Prevention Device (CROPD) to address air traffic controllers' emerging speech patterns
+	\end{description}
+	% - Implemented computational linguistics algorithms for call-sign identification in over 25,000 air traffic controller transmissions \\
+	% - Edited strict language model used for Closed Runway Operations Prevention Device (CROPD) to address emerging speech patterns
+	% Natural language processing research in the Federal Aviation Administration Dept. for Closed Runway Operations Prevention Device (CROPD)}
+	% \begin{description}
+	% 	% Natural language processing research for the Closed Runway Operations Prevention Device (CROPD).
+	%   \item[\small{Summer 2014:}] \hfill \\
+	%   	%The first year I created and analyzed the performance of various call-sign identification algorithms and conducted natural language processing research on over 12,000 air traffic controller transmissions into the use of 
+	%   	% prefixes before call signs by air traffic controllers.
+	%   	- Computational linguistics algorithms for call-sign identification \newline
+	%   	- Natural language processing research \\
+	%   	\hspace*{.5cm} - Analyzed emerging patterns in 12,000 air traffic controller transmissions
+	%   \item[\small{Summer 2015:}] \hfill \\
+	%   	- Expanded NLP work to over 25,000 transmissions and new emerging patterns\newline
+	%   	% - Analyzed the use of separators between runway identifiers and clearances\newline
+	%   	- Edited language model used for the Closed Runway Operations Prevention Device (CROPD)
+	% \end{description}
+}
+
+\section{Publications}
+
+\cventry{2020}{Data Migration using Datalog Program Synthesis}{}{Yuepeng Wang, \underline{Rushi Shah}, Abby Criswell, Rong Pan, Isil Dillig}{\textit{In Submission}}{}
+
+\cventry{2019}{Synthesizing Database Programs for Schema Refactoring}{}{Yuepeng Wang, James Dong, \underline{Rushi Shah}, Isil Dillig}{\textit{Programming Languages Design \& Implementation 2019}}{}
+
+\section{Other Technical Experience}
+
+\cventry{2019}{Teaching Assistant}{CS 389L Automated Logical Reasoning (Graduate level class)}{}{}{} % Teaching Assistant for graduate level CS 389L Automated Logical Reasining 
+\cventry{2019}{Undergraduate Research Fellow (URF)}{UT Office Undergraduate Research}{}{}{}
+
+\cventry{2018}{Speaker}{Math Directed Reading Program}{``Gerrymandering Considered Harmful''}{}{}
+
+\cventry{2018}{Moderator}{Tech \& Politics Speaker Series}{Prof. Hovav Shacham on Election Security}{}{}
+
+\cventry{2017-2018}{Communications Officer}{Information Systems \& Security Society (ISSS)}{}{}{}
+% TA-ship
+% URF
+% DRP
+% ISSS
+
+\section{Service}
+
+\cventry{2017-2019}{TX Votes (non-partisan civic engagement)}{STEM Committee Chair}{10-12 hrs/wk}{}{
+\begin{description}
+	\item[-] Threw voter registration drive in Computer Science building; one student registered for every three minutes spent tabling
+	\item[-] Co-hosted {\em Tech \& Politics Speaker Series} with Austin Tech Alliance; invited speakers include Professor Hovav Shacham (Computer Security expert who spoke on integrity of voting systems) and Mark Strama (head of Google Fiber West who spoke on tech lobbying efforts)
+	\item[-] Trained as Volunteer Deputy Registrar (VDR) and personally registered over 200 voters
+\end{description}} % Organized voter registration drive in CS building (one student registered every three minutes). 
+
+\cventry{2017-2018}{Seva Charities}{}{1-3 hrs/wk}{}{
+\begin{description}
+	\item[-] Active participant in local park cleanup, food bank volunteering, \& annual charity gala
+	\item[-] Fundraising efforts go towards mid-day meals at schools for low/no-income students in India
+	\item[-] Went viral on Snapchat for juggling potatoes at Seva Week fundraiser 
+\end{description}}
+
+\cventry{2017-2019}{Big/Little Endian Turing Mentoring}{}{{\small <}1 hr/wk}{}{
+\begin{description}
+	\item[-] Formally (Big/Little Endian program) and informally mentor underclassmen/prospective Turing Scholars with guidance on getting involved in research, recruiting, and good/bad campus activities
+\end{description}}
+
+% TX Votes
+% Seva
+
+\section{Activities}
+
+\cventry{2018-2019}{UT Saaya Competitive Bollywood Fusion Dance Team}{}{17-26 hrs/wk}{}{Danced in South Indian, Bollywood, \& Bhangra segments of nationally competitive performance}
+\cventry{2017-2019}{Longhorn Salsa Dance Club}{}{1-3 hrs/wk}{}{Fluent social dancer in Salsa \& Bachata dance styles; proficient in Casino \& Zouk dance styles}
+\cventry{2017-2018}{UT Rock Climbing Competitive Team}{}{10-11 hrs/wk}{}{Competed at regionals in lead-climbing; proficient in outdoor bouldering and lead-climbing}
+\cventry{2016-2017}{UT Rock Climbing Club}{}{2-3 hrs/wk}{}{}
+% UT Saaya
+% Longhorn Salsa
+% Rock Climbing Team
+
+\section{Awards \& Honors}
+
+\cventry{2019}{Travis County VDR 100 Club Distinction}{for registering 168 voters in one cycle}{}{}{}
+\cventry{2019-2020}{Eva Stevenson Woods Scholarship}{}{}{}{}
+\cventry{2016-2017}{Gregg \& Mariko Zeitlin Scholarship}{}{}{}{}
+
+\section{Selected Coursework}
+
+\cventry{}{Computer Science}{}{}{}{
+	\textit{CS 439(H)}: Operating Systems (Honors); \textit{CS 331(H)}: Algorithms \& Complexity (Honors); \\ \textit{CS 380 S}: Computer Security (Graduate); \textit{CS 389 L}: \ Automated Logical Reasoning (Graduate)
+}
+\cventry{}{Mathematics}{}{}{}{
+	\textit{M 365 C}: Real Analysis I; \textit{M 373\ K}: Abstract Algebra I; \textit{M 367 K \& L}: Topology I \& Topology II
+}
+
+\section{Personal Interests}
+
+\cventry{}{Cooking}{}{}{best at Gujarati (Indian) cuisine from scratch; enjoy branching out for variety}{}
+\cventry{}{Reading}{}{}{prefer memoirs, political non-fiction, or literary fiction; have read at least a book a month since January 2017: \url{rshah.org/blog/posts/12-books-12-months-2019.html}}{}
+\cventry{}{Basketball, Sand Volleyball, \& Biking}{}{}{play pick-up basketball and sand volleyball games on campus; bike to get places}{}
+
+% Turing Scholar Honors Program
+% Eva Stevenson Woods
+% Gregg and Mariko Zeitlin Scholarship
+
+
+
+% \section{Other Experience}
+
+% % \cventry{``UToPiA''}{UT Program Analysis Research Group}{Researcher}{advised by Prof. Isil Dillig}{}{
+% % 	Applying program synthesis techniques to database-driven web applications. 
+% % }
+
+% \cventry{2019}{Teaching Assistant}{CS 389L Automated Logical Reasoning (Graduate)}{Spring 2019}{}{} % Teaching Assistant for graduate level CS 389L Automated Logical Reasining 
+
+% \cventry{2019}{Undergraduate Research Fellowship (URF)}{}{}{}{}
+
+% \cventry{2018}{Math Directed Reading Program}{Speaker}{``Gerrymandering Considered Harmful''}{}{}
+
+% \cventry{2017-2018}{UT Information Systems \& Security Society (ISSS)}{Communications Officer}{}{}{}
+
+% \section{Other Experience}
+
+% \cventry{TX Votes}{TX Votes (non-partisan civic engagement)}{STEM Committee Chairperson}{}{}{Registered >150 voters; hosted Tech \& Politics Speaker Series Fall 2018.} % Organized voter registration drive in CS building (one student registered every three minutes). 
+
+
+% \cventry{}{}{}{\underline{Synthesizing Database Applications for Schema Refactoring.} PLDI'19 Yuepeng Wang, James Dong, \textbf{Rushi Shah}, Isil Dillig}{}{}
+
+% \cventry{Haskell}{Heckle}{}{static-site compiler; supports LaTeX/PDF and Markdown/HTML posts}{\newline{} \url{https://github.com/2016rshah/heckle}}{}
+
+
+% \section{Open Source Projects}
+
+% \cventry{NodeJS}{Pynt}{}{draw data structures as shapes to get the corresponding Python code}{\newline{} \url{https://github.com/Pynt/Pynt}}{}
+
+% \cventry{Haskell}{Heckle}{}{static-site compiler; supports LaTeX/PDF and Markdown/HTML posts}{\newline{} \url{https://github.com/2016rshah/heckle}}{}
+
+% \cventry{Ruby}{Github Chart API}{}{embed github contributions calendar into HTML as an image \hfill }{\url{https://github.com/2016rshah/githubchart-api}}{}
+
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+
+% \begin{minipage}[t]{0.45\textwidth}
+% 	\section{Language Familiarity}
+% 		\cvitem{5 years}{\textsc{java}}
+% 		\cvitem{4 years}{\textsc{python}, \textsc{javascript}}
+% 		\cvitem{3 years}{\textsc{ruby}}
+% 		\cvitem{2 years}{\textsc{haskell}}
+% 		\cvitem{$\sim 1$ year}{\textsc{scala}, \textsc{c}}
+% \end{minipage}
+% \begin{minipage}[t]{0.55\textwidth}
+	
+	% \begin{minipage}[t]{0.45\textwidth}
+	% 	\section{Selected Coursework}
+
+	% 	\cventry{UT Austin}{Computer Science}{}{}{}{
+	% 		\textit{CS 439(H)}: Operating Systems (Honors) \\
+	% 		\textit{CS 331(H)}: Algorithms and Complexity (Honors) \\
+	% 		\textit{CS 380 S}: \ Computer Security (Graduate) \\
+	% 		\textit{CS 389 L}: \ Automated Logical Reasoning (Graduate)
+	% 	}
+	% \end{minipage}
+	% \begin{minipage}[t]{0.55\textwidth}
+	% 	\subsection{}
+	% 	\cventry{}{Math}{}{}{}{
+	% 		\textit{M 365 C}: Real Analysis I \\
+	% 		\textit{M 373\ K}: Abstract Algebra I \\
+	% 		\textit{M 367 K \& L}: Topology I \& Topology II\\
+	% 	}
+	% \end{minipage}
+
+	% \section{Language Familiarity}
+	% 	\cventry{}{\textsc{java}, \textsc{python}, \textsc{javascript}, \textsc{ruby}, \textsc{haskell}, \textsc{scala}, \textsc{c}, \textsc{c++}}{}{}{}{}
+		
+		% \cventry{}{Computer Science}{}{}{}{\textit{CS 439(H)}: Operating Systems (Honors), \textit{CS 331(H)}: Algorithms and Complexity (Honors), \newline{} \textit{CS 395T}: Program Verification (Graduate), \textit{CS\ 389L}: Automated Logical Reasoning (Graduate)}
+
+
+% 
+
+
+
+% %----------------------------------------------------------------------------------------
+% %	COVER LETTER
+% %----------------------------------------------------------------------------------------
+
+% % To remove the cover letter, comment out this entire block
+
+% \clearpage
+
+% \recipient{Tumblr}{} % Letter recipient
+% \date{\today} % Letter date
+% \opening{To whom it may concern,} % Opening greeting
+% \closing{Respectfully yours,} % Closing phrase
+
+% \makelettertitle % Print letter title
+
+% \makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

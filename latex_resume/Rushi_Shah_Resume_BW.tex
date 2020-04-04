@@ -25,15 +25,20 @@
 
 \documentclass[11pt,letterpaper,roman]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
 
-\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic'
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic'
 \moderncvcolor{black} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{xpatch}
+\xpatchcmd{\cventry}{.\strut}{\strut}{}{}
 
 \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
 
-\usepackage[scale=.80]{geometry} % Reduce document margins
-\setlength{\hintscolumnwidth}{2.45cm} % Uncomment to change the width of the dates column
+\usepackage[scale=.875]{geometry} % Reduce document margins
+% \usepackage[margin=.7in]{geometry}
 
-% \setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+\setlength{\hintscolumnwidth}{1.95cm} % Uncomment to change the width of the dates column
+
+\setlength{\makecvtitlenamewidth}{15cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
 
 \usepackage{framed}
 \definecolor{shadecolor}{rgb}{0.85,0.85,0.85}
@@ -50,8 +55,9 @@
 % \title{Curriculum Vitae}
 % \address{7609 Leonard Drive}{Falls Church, VA 22043}
 \email{2016rshah@gmail.com}
-\homepage{http://www.rshah.org}{Site: rshah.org/} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
-\github{2016rshah}
+\homepage{rshah.org}{Site: rshah.org/} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+% \github{2016rshah}
+\phone{202-755-7424}
 
 %----------------------------------------------------------------------------------------
 
@@ -63,9 +69,9 @@
 %----------------------------------------------------------------------------------------
 \section{Education}
 
-\cventry{Class of 2020}{University of Texas - Austin}{Turing Scholar Honors Program}{}{}{{B.S. Computer Science \& B.S. Mathematics. \textbf{GPA: 3.8}}}
+\cventry{May 2020}{University of Texas - Austin}{Turing Scholar Honors Program}{}{}{{B.S. Computer Science \& B.S. Mathematics; \textbf{GPA: 3.83}}}
 %Ranked among US News and World Report's Top 10 Computer Science Programs.
-\cventry{Class of 2016}{Thomas Jefferson High School for Science and Technology (TJHSST)}{}{}{}{} 
+% \cventry{May 2016}{Thomas Jefferson High School for Science and Technology (TJHSST)}{}{}{}{} 
 %Ranked among US News And World Report's Top 5 Public High Schools.
  % Arguments not required can be left empty
 %----------------------------------------------------------------------------------------
@@ -74,63 +80,166 @@
 
 \section{Work Experience}
 
-\cventry{\small{Tokyo, Japan}}{\large{Amazon}}{}{Summer 2018}{}{
-	Machine vision algorithms to track real-time, location-based purchase trends in order data
+\cventry{Summer 2019}{UT Program Analysis Research Group}{Research Assistant}{Austin}{}{
+	\begin{description}
+		\item[$\bullet$] Presented paper called {\em``Synthesizing Database Programs for Schema Refactoring''} (third author) at top-tier Programming Languages Design \& Implementation (PLDI) conference
+		\item[$\bullet$] Implemented prototype tool in Java programming language for paper called {\em ``Data Migration using Datalog Program Synthesis''} (second author) in top-tier Very Large DataBases (VLDB) conference 
+		% \item[$\bullet$] Research interest in program synthesis for database-driven web applications; implementations completed in Java programming language with Z3 SMT solver and Souffle Datalog engine
+	\end{description}
 }
 
-\hfill 
+% \hfill
 
-\cventry{\small{New York City}}{\large{Originate}}{}{Summer 2017}{}{
-	Distributed computing for data center workload analysis (Scala + Spark + Cassandra)
+\cventry{Spring \\ 2019}{CS 389L Automated Logical Reasoning (graduate level class)}{Teaching Assistant}{}{}{
+	\begin{description}
+		\item[$\bullet$] Served as Teaching Assistant for 60 Master's and Ph.D. students; graded weekly proof-based homeworks; held well-attended weekly office hours; helped grade midterm and final exam
+	\end{description}
+} % Teaching Assistant for graduate level CS 389L Automated Logical Reasining 
+
+
+% \hfill 
+
+\cventry{Summer 2018}{Amazon}{Software Engineering Intern}{Tokyo, Japan}{}{
+	\begin{description}
+		\item[$\bullet$] Elegantly reduced the task of tracking real-time, location-based purchase trends in Amazon order data to leverage an edge-detection algorithm (a traditional machine vision technique)
+		\item[$\bullet$] Implemented a service based on above approach using the Java programming language, the Python programming language, the OpenCV library, and Amazon Web Services tools like S3 and EC2
+	\end{description}
+	% Machine vision algorithms to track real-time, location-based purchase trends in order data
 }
 
-\hfill 
+% \hfill 
 
+\cventry{Summer  2017}{Originate}{Software Engineering Intern}{New York City}{}{
+	\begin{description}
+		\item[$\bullet$] Worked at this software consulting firm in Manhattan on a data center workload analysis contract
+		\item[$\bullet$] Generalized and patched distributed computing scripts by coding in the Scala programming language with the Spark framework over Cassandra databases
+		% \item[$\bullet$] Implemented trading strategy simulation for crypto-currencies in the Haskell programming language
+	\end{description}
+	% Distributed computing for data center workload analysis (Scala + Spark + Cassandra)
+}
 
-\cventry{\small{Washington DC}}{\large{Nclud}}{}{Spring 2015}{}{Full-stack web development (MeteorJS)} % 
+% \hfill 
 
-\hfill
+% \cventry{2015}{Nclud}{Software Engineering Intern}{Washington DC}{}{Full-stack web development in MeteorJS} % 
 
-\cventry{\small{N. Virginia}}{\large{MITRE Corporation}}{Federal Aviation Administration Dept.}{Summer 2014-2015}{}{
-	Natural language processing research for Closed Runway Operations Prevention Device (CROPD)
+% \hfill
+
+\cventry{Summer 2014, 2015}{MITRE Corporation}{Research Assistant}{Washington DC}{}{
+	\begin{description}
+		\item[$\bullet$] Worked for the Federal Aviation Administration (FAA) at this federally-funded R\&D center to improve the Closed Runway Operations Prevention Device (CROPD) which prevents plane crashes
+		\item[$\bullet$] Adapted computational linguistics algorithms to call-sign identification task in over 25,000 transmissions; edited strict language model based on air traffic controller's emerging speech patterns
+		% using the Python programming language
+		% \item[$\bullet$] Edited strict language model used for CROPD to address air traffic controllers' emerging speech patterns
+	\end{description}
+	% - Implemented computational linguistics algorithms for call-sign identification in over 25,000 air traffic controller transmissions \\
+	% - Edited strict language model used for Closed Runway Operations Prevention Device (CROPD) to address emerging speech patterns
+	% Natural language processing research in the Federal Aviation Administration Dept. for Closed Runway Operations Prevention Device (CROPD)}
 	% \begin{description}
-		% Natural language processing research for the Closed Runway Operations Prevention Device (CROPD).
-	  % \item[\small{Summer 2014:}] \hfill \\
-	  % 	%The first year I created and analyzed the performance of various call-sign identification algorithms and conducted natural language processing research on over 12,000 air traffic controller transmissions into the use of 
-	  % 	% prefixes before call signs by air traffic controllers.
-	  % 	- Computational linguistics algorithms for call-sign identification \newline
-	  % 	- Natural language processing research \\
-	  % 	\hspace*{.5cm} - Analyzed emerging patterns in 12,000 air traffic controller transmissions
-	  % \item[\small{Summer 2015:}] \hfill \\
-	  % 	- Expanded NLP work to over 25,000 transmissions and new emerging patterns\newline
-	  % 	% - Analyzed the use of separators between runway identifiers and clearances\newline
-	  % 	- Edited language model used for the Closed Runway Operations Prevention Device (CROPD)
+	% 	% Natural language processing research for the Closed Runway Operations Prevention Device (CROPD).
+	%   \item[\small{Summer 2014:}] \hfill \\
+	%   	%The first year I created and analyzed the performance of various call-sign identification algorithms and conducted natural language processing research on over 12,000 air traffic controller transmissions into the use of 
+	%   	% prefixes before call signs by air traffic controllers.
+	%   	- Computational linguistics algorithms for call-sign identification \newline
+	%   	- Natural language processing research \\
+	%   	\hspace*{.5cm} - Analyzed emerging patterns in 12,000 air traffic controller transmissions
+	%   \item[\small{Summer 2015:}] \hfill \\
+	%   	- Expanded NLP work to over 25,000 transmissions and new emerging patterns\newline
+	%   	% - Analyzed the use of separators between runway identifiers and clearances\newline
+	%   	- Edited language model used for the Closed Runway Operations Prevention Device (CROPD)
 	% \end{description}
 }
 
 \section{Publications}
 
-\cventry{PLDI'19}{Synthesizing Database Applications for Schema Refactoring}{}{Yuepeng Wang, James Dong, \underline{Rushi Shah}, Isil Dillig}{\textit{Programming Languages Design \& Implementation}}{}
+\cventry{Sept. 2020}{Data Migration using Datalog Program Synthesis}{}{Yuepeng Wang, \underline{Rushi Shah}, \newline{} Abby Criswell, Rong Pan, Isil Dillig}{\textit{Proceedings on Very Large DataBases (VLDB '20)}}{}
 
-\section{Research Background}
+\cventry{March 2020}{Texas Felon Disenfranchisement Enables Institutional Racism}{}{\underline{Rushi Shah}}{\newline{} \textit{The Daily Texan}}{}
 
-\cventry{``UToPiA''}{UT Program Analysis Research Group}{Researcher}{advised by Prof. Isil Dillig}{}{
-	Applying program synthesis techniques to database-driven web applications. 
-}
+\cventry{June 2019}{Synthesizing Database Programs for Schema Refactoring}{}{Yuepeng Wang, James Dong, \underline{Rushi Shah}, Isil Dillig}{\textit{Programming Languages Design \& Implementation (PLDI '19)}}{}
 
-\cventry{TA}{Teaching Assistant}{CS 389L Automated Logical Reasoning (Graduate)}{Spring 2019}{}{} % Teaching Assistant for graduate level CS 389L Automated Logical Reasining 
+\section{Leadership}
 
-\cventry{``URF''}{Undergraduate Research Fellow (URF)}{}{Spring 2019}{}{}
+\cventry{2017-2020}{TX Votes (non-partisan civic engagement)}{STEM Committee Chairperson}{}{}{
+\begin{description}
+	\item[$\bullet$] Threw voter registration drive in Computer Science building, organized four {\em Tech \& Politics Speaker Series} events, and personally registered over 250 voters
+\end{description}
+} 
 
-% Verifying Equivalence of Database-Driven Applications. POPL'18 
-% Yuepeng Wang, Isil Dillig, Shuvendu Lahiri, William Cook 
 
-\section{Other Experience}
-\cventry{``ISSS''}{UT Information Systems \& Security Society}{Officer}{}{}{}
+\section{Speaking Engagements}
 
-\cventry{TX Votes}{TX Votes (non-partisan civic engagement)}{STEM Committee Chairperson}{}{}{Registered >150 voters; hosted Tech \& Politics Speaker Series Fall 2018.} % Organized voter registration drive in CS building (one student registered every three minutes). 
+\cventry{Dec. 2018}{Moderator}{Tech \& Politics Speaker Series}{Prof. Hovav Shacham on Election Security}{}{}
 
-\cventry{``DRP''}{Math Directed Reading Program}{Speaker}{``Gerrymandering Considered Harmful''}{}{}
+\cventry{Nov. 2018}{Speaker}{Math Directed Reading Symposium}{``Gerrymandering Considered Harmful''}{}{}
+
+\cventry{Apr. 2018}{Speaker}{Turing Lightning Talks}{``Voting! For fun \& profit.''}{}{}
+
+\cventry{Feb. '18,'19}{Moderator}{Great Conversations Gala}{Annette Strauss Institute For Civic Life}{}{}
+
+
+% \section{Extracurricular Activities}
+
+% \cventry{Sept. 2018 \\ May 2019}{UT Saaya Competitive Bollywood Fusion Dance Team}{}{17-26 hrs/wk}{}
+% {\begin{description}
+% 			\item[$\bullet$] Danced in South Indian, Bollywood, and Bhangra segments of nationally competitive performance
+% \end{description}}
+% \cventry{Sept. 2017 \\ Present}{Longhorn Salsa Dance Club}{}{1-3 hrs/wk}{}
+% {\begin{description}
+% 			\item[$\bullet$] Familiar with Salsa, Bachata, Casino, and Zouk dance styles
+% \end{description}}
+% \cventry{Sept. 2017 \\ May 2018}{UT Rock Climbing Competitive Team}{}{10-11 hrs/wk}{}
+% {\begin{description}
+% 			\item[$\bullet$] Southwest Regional level competitor; proficient in outdoor bouldering and outdoor sport climbing
+% \end{description}}
+% % \cventry{2016-2017}{UT Rock Climbing Club}{}{2-3 hrs/wk}{}{}
+
+% \section{Awards \& Honors}
+
+% \cventry{2019}{Undergraduate Research Fellow}{UT Office Undergraduate Research}{}{}{} % 135 / 212
+% \cventry{2019}{VDR 100 Club Award}{Travis County Tax Office}{for registering 168 voters in one cycle}{}{}
+% \cventry{2019}{Eva Stevenson Woods Scholarship}{\small UT Unrestricted Endowed Presidential Scholarship}{}{}{} % 15%
+% \cventry{2016}{Gregg \& Mariko Zeitlin Scholarship}{\small UT Unrestricted Endowed Presidential Scholarship}{}{}{} % 15%
+
+% \section{Selected Coursework}
+
+% \cventry{}{Computer Science}{}{}{}{
+% 	% \textit{CS 439(H)}: Operating Systems (Honors); \textit{CS 389 L}: \ Automated Logical Reasoning (Graduate); \\ 
+% 	\textit{CS 380 S}: Computer Security (Graduate); \textit{CS 395 T}: \ Cybersecurity Law \& Policy (Graduate)
+% }
+% \cventry{}{Mathematics}{}{}{}{
+% 	\textit{M 365 C}: Real Analysis I; \textit{M 373\ K}: Abstract Algebra I; \textit{M 367 K \& L}: Topology I \& Topology II
+% }
+
+% \section{Personal Interests}
+
+% \cventry{}{Cooking}{}{}{best at Gujarati (Indian) cuisine from scratch; enjoy branching out for variety}{}
+% \cventry{}{Reading}{}{}{prefer memoirs, political non-fiction, or literary fiction; have read at least a book a month since January 2017: \url{rshah.org/blog/posts/12-books-12-months-2019.html}}{}
+% \cventry{}{Basketball, Sand Volleyball, \& Biking}{}{}{play pick-up basketball and sand volleyball games on campus; bike to get places}{}
+
+% Turing Scholar Honors Program
+% Eva Stevenson Woods
+% Gregg and Mariko Zeitlin Scholarship
+
+
+
+% \section{Other Experience}
+
+% % \cventry{``UToPiA''}{UT Program Analysis Research Group}{Researcher}{advised by Prof. Isil Dillig}{}{
+% % 	Applying program synthesis techniques to database-driven web applications. 
+% % }
+
+% \cventry{2019}{Teaching Assistant}{CS 389L Automated Logical Reasoning (Graduate)}{Spring 2019}{}{} % Teaching Assistant for graduate level CS 389L Automated Logical Reasining 
+
+% \cventry{2019}{Undergraduate Research Fellowship (URF)}{}{}{}{}
+
+% \cventry{2018}{Math Directed Reading Program}{Speaker}{``Gerrymandering Considered Harmful''}{}{}
+
+% \cventry{2017-2018}{UT Information Systems \& Security Society (ISSS)}{Communications Officer}{}{}{}
+
+% \section{Other Experience}
+
+% \cventry{TX Votes}{TX Votes (non-partisan civic engagement)}{STEM Committee Chairperson}{}{}{Registered >150 voters; hosted Tech \& Politics Speaker Series Fall 2018.} % Organized voter registration drive in CS building (one student registered every three minutes). 
+
 
 % \cventry{}{}{}{\underline{Synthesizing Database Applications for Schema Refactoring.} PLDI'19 Yuepeng Wang, James Dong, \textbf{Rushi Shah}, Isil Dillig}{}{}
 
@@ -161,24 +270,24 @@
 % \end{minipage}
 % \begin{minipage}[t]{0.55\textwidth}
 	
-	\begin{minipage}[t]{0.45\textwidth}
-		\section{Selected Coursework}
+	% \begin{minipage}[t]{0.45\textwidth}
+	% 	\section{Selected Coursework}
 
-		\cventry{UT Austin}{Computer Science}{}{}{}{
-			\textit{CS 439(H)}: Operating Systems (Honors) \\
-			\textit{CS 331(H)}: Algorithms and Complexity (Honors) \\
-			\textit{CS 380 S}: \ Computer Security (Graduate) \\
-			\textit{CS 389 L}: \ Automated Logical Reasoning (Graduate)
-		}
-	\end{minipage}
-	\begin{minipage}[t]{0.55\textwidth}
-		\subsection{}
-		\cventry{}{Math}{}{}{}{
-			\textit{M 365 C}: Real Analysis I \\
-			\textit{M 373\ K}: Abstract Algebra I \\
-			\textit{M 367 K \& L}: Topology I \& Topology II\\
-		}
-	\end{minipage}
+	% 	\cventry{UT Austin}{Computer Science}{}{}{}{
+	% 		\textit{CS 439(H)}: Operating Systems (Honors) \\
+	% 		\textit{CS 331(H)}: Algorithms and Complexity (Honors) \\
+	% 		\textit{CS 380 S}: \ Computer Security (Graduate) \\
+	% 		\textit{CS 389 L}: \ Automated Logical Reasoning (Graduate)
+	% 	}
+	% \end{minipage}
+	% \begin{minipage}[t]{0.55\textwidth}
+	% 	\subsection{}
+	% 	\cventry{}{Math}{}{}{}{
+	% 		\textit{M 365 C}: Real Analysis I \\
+	% 		\textit{M 373\ K}: Abstract Algebra I \\
+	% 		\textit{M 367 K \& L}: Topology I \& Topology II\\
+	% 	}
+	% \end{minipage}
 
 	% \section{Language Familiarity}
 	% 	\cventry{}{\textsc{java}, \textsc{python}, \textsc{javascript}, \textsc{ruby}, \textsc{haskell}, \textsc{scala}, \textsc{c}, \textsc{c++}}{}{}{}{}

@@ -111,7 +111,8 @@
       \ifthenelse{\isundefined{\@addressstreet}}{}{\makenewline\addresssymbol\@addressstreet%
         \ifthenelse{\equal{\@addresscity}{}}{}{\makenewline\@addresscity}}% if \addresstreet is defined, \addresscity will always be defined but could be empty
       \ifthenelse{\isundefined{\@mobile}}{}{\makenewline\mobilesymbol\@mobile}%
-      \ifthenelse{\isundefined{\@phone}}{}{\makenewline\phonesymbol\@phone}%
+      \ifthenelse{\isundefined{\@phone}}{}{\makenewline\@phone}%
+      % \ifthenelse{\isundefined{\@pronouns}}{}{\makenewline\@pronouns}%
       \ifthenelse{\isundefined{\@fax}}{}{\makenewline\faxsymbol\@fax}%
       \ifthenelse{\isundefined{\@email}}{}{\makenewline\emailsymbol\emaillink{\@email}}%
       \ifthenelse{\isundefined{\@homepage}}{}{%
@@ -267,6 +268,7 @@
         \ifthenelse{\equal{\@addresscity}{}}{}{\makenewline\@addresscity}}%
       \ifthenelse{\isundefined{\@mobile}}{}{\makenewline\mobilesymbol\@mobile}%
       \ifthenelse{\isundefined{\@phone}}{}{\makenewline\phonesymbol\@phone}%
+      \ifthenelse{\isundefined{\@pronouns}}{}{\makenewline\@pronouns}%
       \ifthenelse{\isundefined{\@fax}}{}{\makenewline\faxsymbol\@fax}%
       \ifthenelse{\isundefined{\@email}}{}{\makenewline\emailsymbol\emaillink{\@email}}%
      \ifthenelse{\isundefined{\@homepage}}{}{%
